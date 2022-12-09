@@ -1,0 +1,13 @@
+main: net.zoda.npc.impl.bukkit.plugin.ProjectNPCBukkitPlugin
+version: 0.0.1-INDEV
+
+author: novastosha
+
+api-version: 1.19
+
+
+prefix: Project-NPC Bukkit
+
+website: https://github.com/novastosha/Project-NPC
+description: An API to create NPCs for Bukkit
+name: Project-NPC
