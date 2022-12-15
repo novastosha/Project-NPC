@@ -15,7 +15,17 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <libraries>${project.parent.basedir}/libraries</libraries>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>minecraft-server-local-repo</id>
+            <url>file://${project.parent.basedir}/libraries</url>
+        </repository>
+    </repositories>
+
 
     <dependencies>
         <dependency>
@@ -29,19 +39,26 @@
             <version>0.0.1-INDEV</version>
         </dependency>
 
-        <!--Generic -->
+        <!--Generic API, barely used-->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.19-R0.1-SNAPSHOT</version>
         </dependency>
 
+        <!--NMS Bridges and API-->
+        <dependency>
+            <groupId>net.zoda</groupId>
+            <artifactId>project-npc-nms-common</artifactId>
+            <version>0.0.1-INDEV</version>
+        </dependency>
 
     </dependencies>
 
     <build>
         <finalName>Project-NPC-Bukkit ${project.version}</finalName>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
