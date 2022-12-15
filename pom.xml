@@ -10,7 +10,11 @@
     <modules>
         <module>API</module>
         <module>Bukkit-Impl</module>
-        <module>Skins Common</module>
+
+        <module>skins-common</module>
+
+        <module>nms-common</module>
+
     </modules>
     <packaging>pom</packaging>
     <description>An API to create NPCs for both Minestom and Bukkit</description>
